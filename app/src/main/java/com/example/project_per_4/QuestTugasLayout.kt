@@ -88,3 +88,9 @@ fun MainScreen(fillMaxSize: Unit.() -> androidx.compose.ui.Modifier) {
         }
     }
 }
+
+@Composable
+fun ProfileCard(profile: ProfileData) {
+
+}
+
