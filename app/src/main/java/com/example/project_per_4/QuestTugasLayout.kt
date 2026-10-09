@@ -1,31 +1,21 @@
 package com.example.project_per_4
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Text
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier // PERBAIKAN: Import Modifier Compose
+import androidx.compose.ui.layout.ContentScale // PERBAIKAN: Import ContentScale
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import java.lang.reflect.Modifier
 
 data class ProfileData(
     val nameRes: Int,
@@ -36,7 +26,7 @@ data class ProfileData(
 )
 
 @Composable
-fun MainScreen(fillMaxSize: Unit.() -> androidx.compose.ui.Modifier) {
+fun MainScreen() {
     val profiles = listOf(
         ProfileData(R.string.name_beby, R.string.phone_beby, R.string.detail_beby, R.color.card_pink, R.color.text_dark),
         ProfileData(R.string.name_nurul, R.string.phone_nurul, R.string.detail_nurul, R.color.card_coklat, R.color.text_dark),
@@ -80,7 +70,7 @@ fun MainScreen(fillMaxSize: Unit.() -> androidx.compose.ui.Modifier) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 items(profiles) { profile ->
-                    ProfileCard(profile)
+                    ProfileCard(profile,)
                 }
             }
             Spacer(modifier = androidx.compose.ui.Modifier.height(24.dp))
