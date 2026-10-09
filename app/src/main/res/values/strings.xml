@@ -15,4 +15,8 @@
     <string name="name_rara">Rara Andini Batrisyia</string>
     <string name="phone_rara">087654321</string>
     <string name="detail_rara">Gamping, Sleman</string>
+    <!-- Data Card 4 -->
+    <string name="name_putri">Nur Zukhrufiyati Sartika Putri </string>
+    <string name="phone_putri">0987654321</string>
+    <string name="detail_putri">MaduKismo, Bantul</string>
 </resources>
