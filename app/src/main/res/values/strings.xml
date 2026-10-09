@@ -2,4 +2,9 @@
     <string name="app_name">QuestTugasLayout_0152</string>
     <string name="title_tekinfo">Teknologi Informasi</string>
     <string name="subtitle_umy">Universitas Muhammadiyah Yogyakarta</string>
+
+    <!-- Data Card 1 -->
+    <string name="name_beby">Beby Ayu Verananda</string>
+    <string name="phone_beby">20240140246</string>
+    <string name="detail_beby">Godean, Sleman</string>
 </resources>
