@@ -11,4 +11,11 @@ data class ProfileData(
 )
 
 @Composable
-fun MainScreen(){}
+fun MainScreen(){
+    val profiles = listOf(
+        ProfileData(R.string.name_beby, R.string.phone_beby, R.string.detail_beby, R.color.card_pink, R.color.text_dark),
+        ProfileData(R.string.name_nurul, R.string.phone_nurul, R.string.detail_nurul, R.color.card_coklat, R.color.text_dark),
+        ProfileData(R.string.name_rara, R.string.phone_rara, R.string.detail_rara, R.color.card_blue, R.color.text_dark),
+        ProfileData(R.string.name_putri, R.string.phone_putri, R.string.detail_putri, R.color.card_purple, R.color.text_dark)
+    )
+}
