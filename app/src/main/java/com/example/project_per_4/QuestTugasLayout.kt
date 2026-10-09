@@ -124,6 +124,31 @@ fun ProfileCard(profile: ProfileData) {
                 contentScale = ContentScale.Fit,
                 modifier = Modifier.size(48.dp)
             )
+            // Kolom Informasi Teks
+            Column(
+                modifier = androidx.compose.ui.Modifier
+                    .weight(1f)
+                    .padding(horizontal = 12.dp)
+            ) {
+                Text(
+                    text = stringResource(id = profile.nameRes),
+                    color = colorResource(id = profile.nameColorRes),
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp
+                )
+                profile.phoneRes?.let { phone ->
+                    Text(
+                        text = stringResource(id = phone),
+                        color = colorResource(id = profile.nameColorRes),
+                        fontSize = 14.sp
+                    )
+                }
+                Text(
+                    text = stringResource(id = profile.detailRes),
+                    color = colorResource(id = profile.nameColorRes),
+                    fontSize = 14.sp
+                )
+            }
         }
     }
 }
