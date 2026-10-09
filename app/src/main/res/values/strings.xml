@@ -11,4 +11,8 @@
     <string name="name_nurul">Nurul Najat Mony</string>
     <string name="phone_nurul">08123456789</string>
     <string name="detail_nurul">Turi, Sleman</string>
+    <!-- Data Card 3 -->
+    <string name="name_rara">Rara Andini Batrisyia</string>
+    <string name="phone_rara">087654321</string>
+    <string name="detail_rara">Gamping, Sleman</string>
 </resources>
