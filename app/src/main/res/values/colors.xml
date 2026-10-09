@@ -10,4 +10,8 @@
     <color name="card_purple">#E2C6E8</color>
     <!-- Warna Teks Utama  -->
     <color name="text_dark">#2B2D42</color>
+    <!-- Warna Teks Tambahan -->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_cyan">#008B8B</color>
+    <color name="text_yellow">#B8860B</color>
 </resources>
