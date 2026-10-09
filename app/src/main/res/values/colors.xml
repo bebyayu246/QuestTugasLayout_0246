@@ -8,4 +8,6 @@
     <color name="card_coklat">#CDB4DB</color>
     <color name="card_blue">#BEE1E6</color>
     <color name="card_purple">#E2C6E8</color>
+    <!-- Warna Teks Utama  -->
+    <color name="text_dark">#2B2D42</color>
 </resources>
