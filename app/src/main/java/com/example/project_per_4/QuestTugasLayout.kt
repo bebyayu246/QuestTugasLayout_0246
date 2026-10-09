@@ -78,6 +78,13 @@ fun MainScreen(fillMaxSize: Unit.() -> androidx.compose.ui.Modifier) {
                     ProfileCard(profile)
                 }
             }
+            Spacer(modifier = androidx.compose.ui.Modifier.height(24.dp))
+
+            Text(
+                text = stringResource(id = R.string.copyright_text),
+                fontSize = 12.sp,
+                modifier = androidx.compose.ui.Modifier.padding(vertical = 8.dp)
+            )
         }
     }
 }
