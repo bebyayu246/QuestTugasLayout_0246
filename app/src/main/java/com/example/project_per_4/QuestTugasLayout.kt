@@ -1,7 +1,12 @@
 package com.example.project_per_4
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import java.lang.reflect.Modifier
 
 data class ProfileData(
@@ -24,5 +29,12 @@ fun MainScreen(fillMaxSize: Unit.() -> androidx.compose.ui.Modifier) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
-    ) {}
+    ) {
+        Image(
+            painter = painterResource(id = R.drawable.logo_umy),
+            contentDescription = stringResource(id = R.string.desc_bg_logo),
+            modifier = androidx.compose.ui.Modifier.size(280.dp),
+            alpha = 0.15f
+        )
+    }
 }
