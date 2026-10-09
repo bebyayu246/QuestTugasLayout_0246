@@ -108,7 +108,23 @@ fun ProfileCard(profile: ProfileData) {
                 .padding(16.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
-        ) {}
+        ) {
+            // Gambar Logo Kiri
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = stringResource(id = R.string.desc_left_logo),
+                contentScale = ContentScale.Fit,
+                modifier = Modifier.size(48.dp)
+            )
+
+            // Gambar Logo Kanan
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = stringResource(id = R.string.desc_right_logo),
+                contentScale = ContentScale.Fit,
+                modifier = Modifier.size(48.dp)
+            )
+        }
     }
 }
 
