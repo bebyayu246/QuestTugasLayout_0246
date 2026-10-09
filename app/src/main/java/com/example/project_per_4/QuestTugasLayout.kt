@@ -6,9 +6,12 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -65,6 +68,16 @@ fun MainScreen(fillMaxSize: Unit.() -> androidx.compose.ui.Modifier) {
             )
 
             Spacer(modifier = androidx.compose.ui.Modifier.height(24.dp))
+
+            LazyColumn(
+                modifier = androidx.compose.ui.Modifier.fillMaxWidth(),
+                verticalArrangement = Arrangement.spacedBy(12.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                items(profiles) { profile ->
+                    ProfileCard(profile)
+                }
+            }
         }
     }
 }
