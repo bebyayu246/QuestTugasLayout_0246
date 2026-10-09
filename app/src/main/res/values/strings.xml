@@ -21,4 +21,7 @@
     <string name="detail_putri">MaduKismo, Bantul</string>
 
     <string name="copyright_text">Copyright, 2026</string>
+    <string name="desc_bg_logo">Background Logo UMY</string>
+    <string name="desc_left_logo">Logo UMY Left</string>
+    <string name="desc_right_logo">Logo UMY Right</string>
 </resources>
