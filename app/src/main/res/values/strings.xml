@@ -7,4 +7,8 @@
     <string name="name_beby">Beby Ayu Verananda</string>
     <string name="phone_beby">20240140246</string>
     <string name="detail_beby">Godean, Sleman</string>
+    <!-- Data Card 2 -->
+    <string name="name_nurul">Nurul Najat Mony</string>
+    <string name="phone_nurul">08123456789</string>
+    <string name="detail_nurul">Turi, Sleman</string>
 </resources>
