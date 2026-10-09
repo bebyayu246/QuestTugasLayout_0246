@@ -2,4 +2,10 @@
 <resources>
     <!-- Background Utama -->
     <color name="screen_bg">#F7F9FC</color>
+
+    <!-- Warna Kolom -->
+    <color name="card_pink">#FFCAD4</color>
+    <color name="card_coklat">#CDB4DB</color>
+    <color name="card_blue">#BEE1E6</color>
+    <color name="card_purple">#E2C6E8</color>
 </resources>
